@@ -1,0 +1,21 @@
+name: flask
+type: service
+from: python
+fromVersionConstraint: "^1.0.0"
+fromVersion: "1.0.0"
+icon: flask
+title: Flask
+labels:
+- flask
+- python
+
+env:
+- name: GUNICORN_APP
+  value: app:app
+- name: FLASK_DEBUG
+  value: 'true'
+  envType: dev
+
+build:
+  dockerfile: Dockerfile
+  connect: true
