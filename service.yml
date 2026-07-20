@@ -18,3 +18,8 @@ env:
 build:
   dockerfile: Dockerfile
   connect: true
+  templates:
+  - name: flask
+    title: Flask boilerplate
+    repo: https://github.com/wodby/flask-boilerplate
+    branch: main
