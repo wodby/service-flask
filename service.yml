@@ -2,7 +2,7 @@ name: flask
 type: service
 from: python
 fromVersionConstraint: "^1.0.0"
-fromVersion: "1.0.6"
+fromVersion: "1.0.7"
 title: Python (Flask)
 labels:
 - flask
